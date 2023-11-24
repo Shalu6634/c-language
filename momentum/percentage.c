@@ -25,7 +25,7 @@ main()
 	{
 		printf("grade-A");
 	}
-	else if(percentage<=90 && percentage<=80)
+	else if(percentage<=90 && percentage>=80)
 	{
 		printf("grade-B");
 	}
