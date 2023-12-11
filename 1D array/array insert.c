@@ -14,7 +14,7 @@ main()
 	printf("enter the value of x:");
 	scanf("%d",&x);
 	a[n]=x;
-	for(i=0; i<n; i++)
+	for(i=0; i<=n; i++)
 	{
 	   printf("%d",a[i]);
 	}
