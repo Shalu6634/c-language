@@ -13,10 +13,9 @@ main()
 	printf("%d",length);
 	int j=length;
 	int check=0;
-	j=j-1;
 	for(i=0; i<length; i++)
 	{
-		if(name[i]!=name[j])
+		if(name[i]!=name[j-1])
 		{
 			 check=1;
 		}
