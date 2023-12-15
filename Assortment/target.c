@@ -13,12 +13,12 @@ main()
 	}
 	for(i=0;i<n;i++)
 	{
-		for(j=i+1; j<n;j++)
+	   for(j=i+1; j<n;j++)
+	    {
+	       if(a[i]+a[j]==5)
 		{
-			if(a[i]+a[j]==5)
-			{
-				printf("(%d,%d)",a[i],a[j]);
-			}
-	    }
+		   printf("(%d,%d)",a[i],a[j]);
+		}
+             }
 	}
 }
