@@ -1,31 +1,35 @@
+//1. WAP check string is palindrome or not.
 #include<stdio.h>
 main()
 {
-	char a[50];
-	printf("enter your name:");
-	scanf("%s",&a);
-	int i,length=0;
-	for(i=0;a[i]!=0; i++)
+	char x[50];
+	printf("enter string of x:");
+	gets(x);
+	char y[50];
+	printf("enter string of y:");
+	gets(y);
+	int i;
+	int length=0;
+	for(i=0; x[i]!=0; i++)
 	{
 		length++;
 	}
 	printf("%d",length);
-	int j=length;
-	int check=0;
+	int j=0,check=0;
 	for(i=0; i<length; i++)
 	{
-		if(a[i]!=a[j-1])
+		if(x[i]!=y[j])
 		{
-			check=1;
+			 check++;
 		}
-		j--;
+		j++;
 	}
 	if(check==0)
 	{
-		printf("\nstring is palindrome:");
+		printf("\nstring is same");
 	}
 	else
 	{
-		printf("\nstring is not palindrome:");
+		printf("\nstring is not same");
 	}
 }
