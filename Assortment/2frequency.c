@@ -21,8 +21,8 @@ main()
 				x[j]=0;
 			}
 		}
-		b[i]=f;
-		if(a[i]!=0)
+		y[i]=f;
+		if(x[i]!=0)
 		{
 			printf("%d -> %d\n",x[i],f);
 		}
