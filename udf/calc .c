@@ -3,9 +3,6 @@
 // and looping. Make sure that the program is endless until a certain letter is pressed.
 void calc()
 {
-    while(1)
-    {
-    	
 	int x,y;
 	printf("\nenter 1 for +\n");
 	printf("enter 2 for -\n");
@@ -15,11 +12,6 @@ void calc()
 	int op;
 	printf("enter your option:");
 	scanf("%d",&op);
-	if(op==0)
-	{
-		
-		break;
-	}
 	printf("enter the first num:");
 	scanf("%d",&x);
 	printf("enter the second num:");
