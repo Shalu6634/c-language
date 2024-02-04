@@ -5,21 +5,27 @@ main()
 	printf("enter the value of n:");
 	scanf("%d",&n);
 	int a[n];
-	int i,x;
+	int i,x,max=a[0];
 	
 	for(i=0; i<n; i++)
 	{
 		printf("enter a[%d]:",i);
 		scanf("%d",&a[i]);
 	}
-	
+	int second=0;
 	for(i=0; i<n; i++)
 	{	
 	  if(a[i]>0)
 	  {
-	     x=a[i];
+	     max=a[i];
 	  }
 	}
-	x=a[n-2];
-	printf("second max :%d ",x);
+	for(i=0; i<n; i++)
+	{
+	     if(second<a[i]&&a[i]<max)
+             {
+     		second=a[i];
+	     } 
+		printf("max number is : %d\n",max)
+		printf("second max :%d ",second);
 }
